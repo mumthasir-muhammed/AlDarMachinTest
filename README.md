@@ -1,6 +1,3 @@
-Here is a sample README file for your iOS development test task on GitHub:
-
----
 
 # iOS Dev Test Task
 
