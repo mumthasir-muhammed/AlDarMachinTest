@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (5.19.4):
+    - SDWebImage/Core (= 5.19.4)
+  - SDWebImage/Core (5.19.4)
+  - TagListView (1.4.1)
+
+DEPENDENCIES:
+  - SDWebImage
+  - TagListView (~> 1.4.0)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - TagListView
+
+SPEC CHECKSUMS:
+  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+
+PODFILE CHECKSUM: 7acebdc1dc3b1c7b860d0ce578d7916a68612d9a
+
+COCOAPODS: 1.15.2
