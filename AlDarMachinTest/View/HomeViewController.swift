@@ -59,6 +59,7 @@ extension HomeViewController: TagListViewDelegate {
         self.homeViewModel = HomeViewModel()
         self.homeViewModel.callFuncToGetNewsDataBasedOnTags(tag: title.lowercased()) { data in
             self.newsModel = data
+            self.collectionView.scrollToItem(at:IndexPath(item: 0, section: 0), at: .right, animated: false)
             self.collectionView.reloadData()
         }
     }
