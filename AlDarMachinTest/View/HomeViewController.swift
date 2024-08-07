@@ -19,12 +19,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tagListView.delegate = self
-        tagListView.addTags(Constants.tags)
-        
+
+        Utility.shared.showSpinner()
         clearNavigatioBar()
+        tagListViewConfig()
         collectionViewConfig()
         callToViewModelForUIUpdate()
+    }
+    
+    func tagListViewConfig() {
+        tagListView.delegate = self
+        tagListView.addTags(Constants.tags)
+        tagListView.marginX = 10
+        tagListView.paddingX = 17
+        tagListView.textFont = .systemFont(ofSize: 14, weight: UIFont.Weight(rawValue: 0))
     }
     
     func collectionViewConfig(){
@@ -49,6 +57,7 @@ class HomeViewController: UIViewController {
             self.newsModel = self.homeViewModel.newsData
             self.collectionView.delegate = self
             self.collectionView.dataSource = self
+            Utility.shared.hideSpinner()
             
         }
     }
@@ -56,11 +65,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: TagListViewDelegate {
     func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+        Utility.shared.showSpinner()
         self.homeViewModel = HomeViewModel()
         self.homeViewModel.callFuncToGetNewsDataBasedOnTags(tag: title.lowercased()) { data in
             self.newsModel = data
             self.collectionView.scrollToItem(at:IndexPath(item: 0, section: 0), at: .right, animated: false)
             self.collectionView.reloadData()
+            Utility.shared.hideSpinner()
         }
     }
 }

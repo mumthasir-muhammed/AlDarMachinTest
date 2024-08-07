@@ -19,6 +19,7 @@
 		0CE710382C61FEEF00284833 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE710372C61FEEF00284833 /* DetailViewController.swift */; };
 		0CE7103B2C6201E400284833 /* TrendingNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7103A2C6201E400284833 /* TrendingNewsCollectionViewCell.swift */; };
 		0CE7103D2C62149B00284833 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7103C2C62149B00284833 /* Constants.swift */; };
+		0CEC02A82C637CB3007A86A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC02A72C637CB3007A86A7 /* Utility.swift */; };
 		613ACACF52EED1EFCE56CC83 /* Pods_AlDarMachinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377E94593039FFECD93707 /* Pods_AlDarMachinTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		0CE710372C61FEEF00284833 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0CE7103A2C6201E400284833 /* TrendingNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CE7103C2C62149B00284833 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CEC02A72C637CB3007A86A7 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		1B377E94593039FFECD93707 /* Pods_AlDarMachinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlDarMachinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538D050BEA03A3056FCA0B0A /* Pods-AlDarMachinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlDarMachinTest.release.xcconfig"; path = "Target Support Files/Pods-AlDarMachinTest/Pods-AlDarMachinTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0CE7103C2C62149B00284833 /* Constants.swift */,
+				0CEC02A72C637CB3007A86A7 /* Utility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEC02A82C637CB3007A86A7 /* Utility.swift in Sources */,
 				0C7E75C52C60EFA000D6FD7B /* HomeViewController.swift in Sources */,
 				0CE710352C61ED3200284833 /* HomeViewModel.swift in Sources */,
 				0CE7103D2C62149B00284833 /* Constants.swift in Sources */,
