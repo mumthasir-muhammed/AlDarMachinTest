@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         tagListView.delegate = self
         tagListView.addTags(Constants.tags)
         
+        clearNavigatioBar()
         collectionViewConfig()
         callToViewModelForUIUpdate()
     }
@@ -32,6 +33,13 @@ class HomeViewController: UIViewController {
         self.collectionView.collectionViewLayout = layout
         self.collectionView.isPagingEnabled = true
         self.collectionView.clipsToBounds = false
+    }
+    
+    func clearNavigatioBar(){
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
     }
     
     func callToViewModelForUIUpdate() {
